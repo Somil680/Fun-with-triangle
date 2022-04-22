@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+    <div>
+        
+        <a href="./area.html">Area</a>
+        <a href="./hypotenus.html">Hypotenus</a>
+        <a href="./quiz.html">Quiz</a>
+    </div>
+</nav>
+    <div class="main">
+    
+     <h1>Is Triangle?</h1>
+
+      <p>  <input type="number" name="" id="input1" placeholder="Angle-one"></p><br>
+      <p> <input type="number" name="" id="input2" placeholder="Angle-two"></p><br>
+      <p> <input type="number" name="" id="input3" placeholder="Angle-three"></p><br>
+      <button id="btn-check"> Check </button>
+      <h2 id="outputBox"></h2>
+    </div>
+    <script>
+const angle1 = document.querySelector('#input1');
+const angle2 = document.querySelector('#input2');
+const angle3 = document.querySelector('#input3');
+const btncheck = document.querySelector('#btn-check');
+const outputbox = document.querySelector('#outputBox');
+
+btncheck.addEventListener('click', angleHandler )
+console.log("clicked");
+function angleHandler(){
+var a1 = angle1.value;
+var a2 = angle2.value;
+var a3 = angle3.value;
+let sum = Number(a1)+Number(a2)+Number(a3);
+ console.log(sum)
+ if (sum === 180 ){
+    outputbox.style.color = 'green';
+outputbox.innerHTML = `Yah!It is a triangle`;
+ }else{
+     outputbox.style.color = 'red';
+     outputbox.innerHTML = `Oh-Oh!the angle does not forms a triangle. `
+ }
+}
+</script>
+</body>
+</html>

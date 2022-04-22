@@ -1,0 +1,72 @@
+body{
+    display: grid;
+}
+
+
+nav{
+    height: auto;
+    background-color:#0000FF;
+    padding: 20px;
+
+
+}
+a{
+    color: white;
+    text-decoration: none;
+    padding: 10px ;
+    font-size: x-large;
+
+}
+.main{
+    text-align: center;
+   background-color: #303030;
+   height: 500px;
+}
+h1{
+    font-size: xx-large;
+    color: white;
+}
+input{
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+}
+.main2{
+    margin: 20px;
+}
+button{
+    padding: 10px 10px 10px 10px ;
+    border-radius: 10px;
+    text-decoration: none;    
+    font-size: larger;
+    color: white;
+    background-color:#0000FF ;
+    width: 30%;
+}
+#outputBox{
+    font-size: xx-large;
+
+}
+h2{
+    color: white;
+}
+.question-one{
+    color: white;
+    text-align: center;
+   
+}
+.question-two{
+    color: white;
+   
+    text-align: center;
+}
+label{
+     padding: none;
+     margin: none;
+     font-size: x-large;
+    display: inline-block;
+
+}
+.quiz-container{
+    text-align: center;
+}
